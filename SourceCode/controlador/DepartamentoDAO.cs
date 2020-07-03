@@ -7,10 +7,10 @@ namespace SourceCode.controlador
 {
     public class DepartamentoDAO
     {
-        public static List<Usuario> GetDep()
+        public static List<Departamento> GetDep()
         {
             DataTable dt = ConnectionDB.ExecuteQuery("SELECT * FROM public.\"DEPARTAMENTO\";");
-            List<Usuario> lista = new List<Usuario>();
+            List<Departamento> lista = new List<Departamento>();
             
             foreach (DataRow columna in dt.Rows)
             {

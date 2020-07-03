@@ -94,8 +94,10 @@
     <ItemGroup>
         <Compile Include="controlador\ConnectionDB.cs" />
         <Compile Include="controlador\DepartamentoDAO.cs" />
+        <Compile Include="controlador\RegistroDAO.cs" />
         <Compile Include="controlador\UsuarioDAO.cs" />
         <Compile Include="modelo\Departamento.cs" />
+        <Compile Include="modelo\Registro.cs" />
         <Compile Include="modelo\Usuario.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />

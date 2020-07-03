@@ -45,6 +45,7 @@ namespace SourceCode
             this.label2 = new System.Windows.Forms.Label();
             this.cmbAsistencia = new System.Windows.Forms.ComboBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.LblBienveindo = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
@@ -52,6 +53,7 @@ namespace SourceCode
             ((System.ComponentModel.ISupportInitialize) (this.dgvEmpleados)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize) (this.numericUpDown1)).BeginInit();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -111,7 +113,7 @@ namespace SourceCode
             this.btnFiebre.Font = new System.Drawing.Font("Showcard Gothic", 15.75F);
             this.btnFiebre.Location = new System.Drawing.Point(100, 177);
             this.btnFiebre.Name = "btnFiebre";
-            this.btnFiebre.Size = new System.Drawing.Size(163, 67);
+            this.btnFiebre.Size = new System.Drawing.Size(163, 86);
             this.btnFiebre.TabIndex = 33;
             this.btnFiebre.Text = "Reportar fiebre alta";
             this.btnFiebre.UseVisualStyleBackColor = true;
@@ -119,9 +121,9 @@ namespace SourceCode
             // btnSinFiebre
             // 
             this.btnSinFiebre.Font = new System.Drawing.Font("Showcard Gothic", 15.75F);
-            this.btnSinFiebre.Location = new System.Drawing.Point(430, 177);
+            this.btnSinFiebre.Location = new System.Drawing.Point(421, 184);
             this.btnSinFiebre.Name = "btnSinFiebre";
-            this.btnSinFiebre.Size = new System.Drawing.Size(163, 52);
+            this.btnSinFiebre.Size = new System.Drawing.Size(184, 73);
             this.btnSinFiebre.TabIndex = 32;
             this.btnSinFiebre.Text = "Dejar pasar";
             this.btnSinFiebre.UseVisualStyleBackColor = true;
@@ -145,7 +147,9 @@ namespace SourceCode
             // 
             // numericUpDown1
             // 
+            this.numericUpDown1.DecimalPlaces = 1;
             this.numericUpDown1.Increment = new decimal(new int[] {1, 0, 0, 65536});
+            this.numericUpDown1.InterceptArrowKeys = false;
             this.numericUpDown1.Location = new System.Drawing.Point(129, 100);
             this.numericUpDown1.Maximum = new decimal(new int[] {41, 0, 0, 0});
             this.numericUpDown1.Minimum = new decimal(new int[] {34, 0, 0, 0});
@@ -190,6 +194,7 @@ namespace SourceCode
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
@@ -197,6 +202,16 @@ namespace SourceCode
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Añadir empleado";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Regular,
+                System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+            this.label1.Location = new System.Drawing.Point(169, 104);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(173, 81);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Les falle, me fallé";
             // 
             // tabPage4
             // 
@@ -227,13 +242,13 @@ namespace SourceCode
             this.Controls.Add(this.tabControl1);
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmPrincipal";
             this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize) (this.dgvEmpleados)).EndInit();
             this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize) (this.numericUpDown1)).EndInit();
+            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
         }
 
@@ -255,5 +270,6 @@ namespace SourceCode
         private System.Windows.Forms.DateTimePicker dtpEntrada;
         private System.Windows.Forms.CheckBox entrada;
         private System.Windows.Forms.ComboBox cmbAsistencia;
+        private System.Windows.Forms.Label label1;
     }
 }

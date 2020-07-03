@@ -17,7 +17,7 @@ namespace SourceCode
         private void upadateControls()
         {
             cmbAsistencia.DataSource = null;
-            cmbAsistencia.ValueMember = "contrasena";
+            cmbAsistencia.ValueMember = "carnet";
             cmbAsistencia.DisplayMember = "nombre";
             cmbAsistencia.DataSource = UsuarioDAO.GetUsuario();
         }
@@ -47,12 +47,18 @@ namespace SourceCode
                 tabControl1.TabPages[0].Parent = null;
                 tabControl1.TabPages[0].Parent = null; 
             }
+            
+            upadateControls();
         }
 
 
         private void btnSinFiebre_Click(object sender, EventArgs e)
         {
+            var us = (Usuario) cmbAsistencia.SelectedItem;
+            bool entrando = entrada.Checked;
             
+            RegistroDAO.NuevoRegistro(us.carnet, entrando, 
+                dtpEntrada.Value, numericUpDown1.Value);
         }
     }
 }
