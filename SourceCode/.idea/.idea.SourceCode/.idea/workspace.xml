@@ -4,11 +4,24 @@
     <list default="true" id="666a84bf-706e-4501-93cd-2d03e9dee046" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SourceCode/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SourceCode/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.SourceCode/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.SourceCode/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form1.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/vista/Form1.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/vista/FrmLogin.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SourceCode.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/SourceCode.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/SourceCode.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/SourceCode.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/SourceCode.exe.config" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/SourceCode.exe.config" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/SourceCode.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/SourceCode.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controlador/ConnectionDB.cs" beforeDir="false" afterPath="$PROJECT_DIR$/controlador/ConnectionDB.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controlador/UsuarioDAO.cs" beforeDir="false" afterPath="$PROJECT_DIR$/controlador/UsuarioDAO.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/SourceCode.FrmLogin.resources" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/SourceCode.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/SourceCode.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/SourceCode.csproj.GenerateResource.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/SourceCode.csproj.GenerateResource.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/obj/Debug/SourceCode.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/SourceCode.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/SourceCode.exe" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/SourceCode.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/SourceCode.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/SourceCode.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vista/Form1.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vista/Form1.resx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vista/FrmLogin.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vista/FrmPrincipal.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/vista/FrmPrincipal.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vista/FrmPrincipal.cs" beforeDir="false" afterPath="$PROJECT_DIR$/vista/FrmPrincipal.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,19 +33,30 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/modelo/Usuario.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/vista/Form1.Designer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/vista/FrmLogin.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/controlador/UsuarioDAO.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/vista/FrmLog.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/vista/FrmLog.Designer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/controlador/ConnectionDB.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/vista/FrmPrincipal.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/modelo/Departamento.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/vista/FrmPrincipal.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/controlador/DepartamentoDAO.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/vista/FrmLogin.cs" />
-        <option value="$PROJECT_DIR$/vista/FrmPrincipal.Designer.cs" />
-        <option value="$PROJECT_DIR$/controlador/ConnectionDB.cs" />
         <option value="$PROJECT_DIR$/modelo/Usuario.cs" />
+        <option value="$PROJECT_DIR$/modelo/Departamento.cs" />
+        <option value="$PROJECT_DIR$/controlador/UsuarioDAO.cs" />
+        <option value="$PROJECT_DIR$/controlador/DepartamentoDAO.cs" />
+        <option value="$PROJECT_DIR$/controlador/ConnectionDB.cs" />
+        <option value="$PROJECT_DIR$/vista/FrmLogin.cs" />
+        <option value="$PROJECT_DIR$/vista/FrmLog.Designer.cs" />
+        <option value="$PROJECT_DIR$/Program.cs" />
+        <option value="$PROJECT_DIR$/vista/FrmLog.cs" />
+        <option value="$PROJECT_DIR$/vista/FrmPrincipal.Designer.cs" />
+        <option value="$PROJECT_DIR$/vista/FrmPrincipal.cs" />
       </list>
     </option>
   </component>
@@ -79,43 +103,46 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1593704777619</updated>
-      <workItem from="1593704792103" duration="7396000" />
+      <workItem from="1593704792103" duration="15566000" />
+      <workItem from="1593737204564" duration="5309000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1593707350698">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1593740933893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593707350698" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1593707350697">
+    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1593740933893" />
+    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1593740933893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593707350697" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1593707350696">
+    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1593740933893" />
+    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1593740933893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593707350696" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1593707350698">
+    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1593740933893" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1593740933893">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593707350698" />
+    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1593740933893" />
     <state x="393" y="44" key="RiderGenerateDialog" timestamp="1593715187577">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

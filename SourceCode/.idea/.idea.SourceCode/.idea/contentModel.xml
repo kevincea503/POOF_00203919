@@ -8,9 +8,11 @@
       <e p="bin" t="ExcludeRecursive" />
       <e p="controlador" t="Include">
         <e p="ConnectionDB.cs" t="Include" />
+        <e p="DepartamentoDAO.cs" t="Include" />
         <e p="UsuarioDAO.cs" t="Include" />
       </e>
       <e p="modelo" t="Include">
+        <e p="Departamento.cs" t="Include" />
         <e p="Usuario.cs" t="Include" />
       </e>
       <e p="obj" t="ExcludeRecursive" />
@@ -27,9 +29,9 @@
       <e p="SourceCode.csproj" t="IncludeRecursive" />
       <e p="SourceCode.sln" t="IncludeFlat" />
       <e p="vista" t="Include">
-        <e p="Form1.Designer.cs" t="Include" />
-        <e p="Form1.resx" t="Include" />
-        <e p="FrmLogin.cs" t="Include" />
+        <e p="FrmLog.cs" t="Include" />
+        <e p="FrmLog.Designer.cs" t="Include" />
+        <e p="FrmLog.resx" t="Include" />
         <e p="FrmPrincipal.cs" t="Include" />
         <e p="FrmPrincipal.Designer.cs" t="Include" />
         <e p="FrmPrincipal.resx" t="Include" />

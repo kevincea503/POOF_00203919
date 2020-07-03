@@ -1,0 +1,54 @@
+
+CREATE TABLE public."DEPARTAMENTO"
+(
+    "idDepartamento" serial NOT NULL,
+    nombre character varying(20) NOT NULL,
+    ubicacion character varying(30) NOT NULL,
+    PRIMARY KEY ("idDepartamento")
+);
+
+ALTER TABLE public."DEPARTAMENTO"
+    OWNER to postgres;
+
+
+
+CREATE TABLE public."USUARIO"
+(
+    "idUsuario" integer NOT NULL,
+    "idDepartamento" integer NOT NULL,
+    contrasena character varying(20) NOT NULL,
+    nombre character varying(20) NOT NULL,
+    apellido character varying(15) NOT NULL,
+    dui character varying(10) NOT NULL,
+    "fechaNacimiento" date NOT NULL,
+    CONSTRAINT pk_departamento FOREIGN KEY ("idDepartamento")
+        REFERENCES public."DEPARTAMENTO" ("idDepartamento") MATCH SIMPLE
+        ON UPDATE CASCADE
+        ON DELETE CASCADE
+        NOT VALID
+);
+
+ALTER TABLE public."USUARIO"
+    OWNER to postgres;
+
+ALTER TABLE public."USUARIO"
+    ADD CONSTRAINT pk_user UNIQUE ("idUsuario");
+
+
+CREATE TABLE public."Registro"
+(
+    "idRegistro" serial NOT NULL,
+    "idUsuario" integer NOT NULL,
+    entrada boolean NOT NULL,
+    "fecha/hora" timestamp(3) with time zone NOT NULL,
+    temperatura integer NOT NULL,
+    PRIMARY KEY ("idRegistro"),
+    CONSTRAINT fk_usuario FOREIGN KEY ("idUsuario")
+        REFERENCES public."USUARIO" ("idUsuario") MATCH SIMPLE
+        ON UPDATE CASCADE
+        ON DELETE CASCADE
+        NOT VALID
+);
+
+ALTER TABLE public."Registro"
+    OWNER to postgres;

@@ -6,7 +6,7 @@ namespace SourceCode.controlador
     public class ConnectionDB
     {
         private static string host = "127.0.0.1",
-            database = "hugo",
+            database = "MongoEnterprise",
             UserId = "postgres",
             password = "cassandra70948054";
         
